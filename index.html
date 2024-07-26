@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" type="module" defer></script>
+    <title>Landing Page</title>
+</head>
+<body>
+   <div id="forms" class="forms">
+
+    <h4 id="info" class="alert">Message</h4>
+    <!-- login form -->
+    <form class="login" id="Login" action="">
+        <h1>Log In</h1>
+        <p id="messageLogin" class="message">message</p>
+        <div class="username input">
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username">
+        </div>
+
+        <div class="account input">
+            <label for="account_type">Account: </label>
+            <select name="account_type" id="account_type">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+            </select>
+        </div>
+
+        <div class="password input">
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password">
+        </div>
+        <input id="loginButton" class="button" type="submit" value="Login">
+        <p>Don't have an account? <span class="clickable_span" id="clickable_1">Sign Up</span></p>
+     </form>
+
+     <!-- signup form -->
+     <form class="signup" id="Signup" action="">
+        <h1>Sign Up</h1>
+        <p id="messageSignup" class="message">message</p>
+        <div class="username input">
+            <label for="cusername">Username: </label>
+            <input type="text" name="cusername" id="cusername">
+        </div>
+
+        <div class="email input">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="account input">
+            <label for="account_type">Account: </label>
+            <select name="caccount_type" id="caccount_type">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+            </select>
+        </div>
+
+        <div class="password input">
+            <label for="cpassword">Password: </label>
+            <input type="password" name="cpassword" id="cpassword">
+        </div>
+        <button id="signupButton" class="button">Sign Up</button>
+        <p>Already have an account? <span class="clickable_span" id="clickable_2">Login</span></p>
+     </form>
+
+
+</div>
+
+<div id="container" class="container">
+    <div class="navbar">
+        <div class="logo">
+            <h1 id="welcomeText">Welcome Username</h1>
+            <h2 id="accountType">Account Type</h2>
+        </div>
+        <div class="navs">
+            <ul>
+                <li id="logout">Logout</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="dashboard">
+            <p>Assignments</p>
+        </div>
+        <div id="itemContainer" class="items">
+
+        </div>
+    </div>
+</div>
+
+<div id="finfo" class="finfo">
+    <p id="closepopup">close</p>
+    <div id="imessage" class="imessage">
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/appwrite@15.0.0"></script>
+</body>
+</html>
